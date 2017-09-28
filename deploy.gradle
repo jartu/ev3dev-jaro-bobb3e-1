@@ -1,4 +1,8 @@
 
+ssh.settings {
+    knownHosts = allowAnyHosts
+}
+
 task testConnection << {
     ssh.run {
         session(remotes.ev3dev) {
@@ -22,15 +26,6 @@ task remoteRun << {
         session(remotes.ev3dev) {
             println "java -server -jar /home/robot/" + "${rootProject.name}" + "-all-" + version + ".jar "
             execute "java -server -jar /home/robot/" + "${rootProject.name}" + "-all-" + version + ".jar "
-        }
-    }
-}
-
-task remoteSudoRun << {
-    ssh.run {
-        session(remotes.ev3dev) {
-            println "echo -e \"maker\" | sudo -S java -server -jar /home/robot/" + "${rootProject.name}" + "-" + version + "-all" + ".jar"
-            execute "echo -e \"maker\" | sudo -S java -server -jar /home/robot/" + "${rootProject.name}" + "-" + version + "-all" + ".jar"
         }
     }
 }
