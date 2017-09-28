@@ -1,4 +1,4 @@
-package jaro.ev3dev;
+package jaro.ev3dev.bobb3e;
 
 import ev3dev.sensors.EV3Key;
 import lejos.hardware.Key;

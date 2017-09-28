@@ -1,6 +1,6 @@
-package jaro.ev3dev;
+package jaro.ev3dev.bobb3e;
 
-public class AnyTest {
+public class AnyTestManual {
 
     public static void main(final String[] args) throws Exception {
 

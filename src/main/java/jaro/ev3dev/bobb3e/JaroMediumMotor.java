@@ -1,4 +1,4 @@
-package jaro.ev3dev;
+package jaro.ev3dev.bobb3e;
 
 import ev3dev.actuators.lego.motors.BaseRegulatedMotor;
 import ev3dev.actuators.lego.motors.EV3MediumRegulatedMotor;
